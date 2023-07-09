@@ -1,0 +1,43 @@
+.toast{
+  
+    border: 1px solid var(--secondary-color);
+    border-left: 15px solid var(--primary-color);
+    border-radius: 0.3rem;
+ 
+    margin-left: 1px;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    right:1%;
+    bottom:3%;
+    font-weight: bolder;
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+    animation: fade-in 1s;
+   
+}
+.primary{
+    background-color: rgb(49, 41, 41);
+    color:rgb(245, 245, 245);
+}
+.success{
+    background-color: rgb(10, 119, 15);
+    color:rgb(245, 245, 245);
+}
+.error{
+    background-color: rgb(189, 45, 45);
+    color:rgb(245, 245, 245);
+}
+@keyframes fade-in{
+    from{
+        right:0px;
+        opacity: 0;
+    }
+    to{
+        right: 1%;
+        opacity: 1;
+    }
+}
+

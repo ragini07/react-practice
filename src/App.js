@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import CharacterCounter from "./exercise/character-counter";
+import PasswordMatch from "./exercise/password-match";
+import ShowPassword from "./exercise/show-password";
+import AddToCart from "./exercise/addToCart";
+import SwitchTab from "./exercise/switch-tabs";
+import ShowToast from "./exercise/Toast/ShowToast";
+import DarkMode from "./exercise/DarkMode";
+import LikeInList from "./exercise/LikeInList";
+import  WishList  from "./Effect-Class/Wishlist-LocalStorage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CharacterCounter/>
+     {/* <PasswordMatch />  */}
+    {/* <ShowPassword /> */}
+    {/* <AddToCart /> */}
+    {/* <SwitchTab /> */}
+    {/* <ShowToast /> */}
+    {/* <DarkMode /> */}
+    {/* <LikeInList /> */}
+    <WishList />
     </div>
   );
 }
